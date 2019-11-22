@@ -1,10 +1,10 @@
-package pe.upc.edu.easyFinance.adapters
+package pe.upc.edu.easyFinance.view.adapters
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 
-class SectionsPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT){
+class SectionPageAdapter (fm: FragmentManager) : FragmentPagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT){
 
     private val mFragmentList = ArrayList<Fragment>()
     private val mFragmentTitle = ArrayList<String>()
