@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="pe.upc.edu.easyFinance">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_easy_finance"
@@ -10,28 +12,28 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="pe.upc.edu.easyFinance.activities.ForgotActivity"
-            android:parentActivityName="pe.upc.edu.easyFinance.activities.SignInActivity">
+            android:name="pe.upc.edu.easyFinance.view.activities.ForgotActivity"
+            android:parentActivityName="pe.upc.edu.easyFinance.view.activities.SignInActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="pe.upc.edu.easyFinance.activities.SignInActivity" />
+                android:value="pe.upc.edu.easyFinance.view.activities.SignInActivity" />
         </activity>
         <activity
-            android:name="pe.upc.edu.easyFinance.activities.SignUpActivity"
-            android:parentActivityName="pe.upc.edu.easyFinance.activities.SignInActivity">
+            android:name="pe.upc.edu.easyFinance.view.activities.SignUpActivity"
+            android:parentActivityName="pe.upc.edu.easyFinance.view.activities.SignInActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="pe.upc.edu.easyFinance.activities.SignInActivity" />
+                android:value="pe.upc.edu.easyFinance.view.activities.SignInActivity" />
         </activity>
-        <activity android:name="pe.upc.edu.easyFinance.activities.SignInActivity" />
-        <activity android:name="pe.upc.edu.easyFinance.activities.LaunchActivity">
+        <activity android:name="pe.upc.edu.easyFinance.view.activities.SignInActivity" />
+        <activity android:name="pe.upc.edu.easyFinance.view.activities.LaunchActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="pe.upc.edu.easyFinance.activities.MainActivity" />
+        <activity android:name="pe.upc.edu.easyFinance.view.activities.MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

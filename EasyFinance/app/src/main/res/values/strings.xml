@@ -55,4 +55,15 @@ Integer efficitur venenatis felis interdum interdum. Fusce vulputate facilisis t
     <string name="birthday_error">Birthday is required</string>
     <string name="confirm_error_2">Confirm Password must be the same as Password</string>
     <string name="registry">You are register</string>
+    <string name="hint_category">Category</string>
+    <string name="hint_create">Create At</string>
+    <string name="hint_amount">Amount</string>
+    <string name="hint_reach">Reach At:</string>
+    <string name="hint_reach_at">Reach Day</string>
+    <string name="hint_login_no_internet">Check your internet connection</string>
+    <string name="alert_register_success">Your registration was success</string>
+    <string name="alert_error">Check your data</string>
+    <string name="hint_date">Create Day</string>
+    <string name="hint_type">Type</string>
+    <string name="hint_logout">Logout</string>
 </resources>

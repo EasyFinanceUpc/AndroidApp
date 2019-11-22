@@ -1,4 +1,4 @@
-package pe.upc.edu.easyFinance.activities
+package pe.upc.edu.easyFinance.view.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

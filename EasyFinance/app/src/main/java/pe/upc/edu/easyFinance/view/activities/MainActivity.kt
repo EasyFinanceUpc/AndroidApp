@@ -1,7 +1,11 @@
-package pe.upc.edu.easyFinance.activities
+package pe.upc.edu.easyFinance.view.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import android.view.View
 import android.view.animation.AccelerateInterpolator
 import android.view.animation.Animation
 import android.view.animation.DecelerateInterpolator
@@ -10,17 +14,20 @@ import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
-import pe.upc.edu.easyFinance.fragments.GoalFragment
+import pe.upc.edu.easyFinance.view.fragments.GoalFragment
 import pe.upc.edu.easyFinance.R
-import pe.upc.edu.easyFinance.adapters.SectionsPagerAdapter
-import pe.upc.edu.easyFinance.fragments.BudgetFragment
-import pe.upc.edu.easyFinance.fragments.DashboardFragment
+import pe.upc.edu.easyFinance.view.fragments.BudgetFragment
+import pe.upc.edu.easyFinance.view.fragments.DashboardFragment
 import kotlinx.android.synthetic.main.activity_main.*
+import pe.upc.edu.easyFinance.model.persistence.AppDatabase
+import pe.upc.edu.easyFinance.model.persistence.model.User
+import pe.upc.edu.easyFinance.view.adapters.SectionPageAdapter
 
 class MainActivity : AppCompatActivity() {
 
     private var backPress = 0
     lateinit var toolbar: Toolbar
+    var users: MutableList<User> = ArrayList()
     var colorIntArray: List<Int> = arrayListOf(R.color.primary, R.color.primaryDark, R.color.warningError)
     var iconIntArray: List<Int> = arrayListOf(R.drawable.ic_add, R.drawable.ic_add, R.drawable.ic_add)
 
@@ -53,11 +60,32 @@ class MainActivity : AppCompatActivity() {
         //endregion
 
         //region ToolBar
-        toolbar = findViewById(R.id.toolbar)
+        toolbar = findViewById(R.id.toolbar_home)
         setSupportActionBar(toolbar)
 
         supportActionBar?.title = resources.getString(R.string.title_home)
         //endregion
+
+        users = AppDatabase.getInstance(applicationContext).getDao().getAll()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when (item.itemId){
+            R.id.bt_logout -> {
+                val intent = Intent(this, SignInActivity::class.java)
+                logOut()
+                startActivity(intent)
+                return true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+        return false
     }
 
     override fun onPause() {
@@ -86,8 +114,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupViewPager(viewPager: ViewPager) {
-        //var adapter = SectionsPagerAdapter(applicationContext, supportFragmentManager)
-        val adapter = SectionsPagerAdapter(supportFragmentManager)
+        val adapter = SectionPageAdapter(supportFragmentManager)
         adapter.addFragment(DashboardFragment(), resources.getString(R.string.title_dashboard))
         adapter.addFragment(GoalFragment(), resources.getString(R.string.title_goals))
         adapter.addFragment(BudgetFragment(), resources.getString((R.string.title_budget)))
@@ -117,5 +144,11 @@ class MainActivity : AppCompatActivity() {
             }
         })
         fab.startAnimation(shrink)
+    }
+
+    private fun logOut(){
+        val index = users[0].id
+        var user = User(index, "", false)
+        AppDatabase.getInstance(applicationContext).getDao().update(user)
     }
 }

@@ -1,4 +1,4 @@
-package pe.upc.edu.easyFinance.activities
+package pe.upc.edu.easyFinance.view.activities
 
 import android.app.DatePickerDialog
 import android.content.Intent
@@ -7,13 +7,18 @@ import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_sign_up.*
 import kotlinx.android.synthetic.main.spinner_item.*
 import pe.upc.edu.easyFinance.R
+import pe.upc.edu.easyFinance.model.request.SignUpRequest
+import pe.upc.edu.easyFinance.model.response.LoginResponse
+import pe.upc.edu.easyFinance.service.RetrofitClient
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 import java.util.*
 
 class SignUpActivity : AppCompatActivity() {
@@ -112,8 +117,25 @@ class SignUpActivity : AppCompatActivity() {
             tilConfirm.isErrorEnabled = false
 
         if(isValid){
-            Toast.makeText(applicationContext,R.string.registry, Toast.LENGTH_SHORT).show()
-            startActivity(Intent(applicationContext, SignInActivity::class.java))
+
+            val request = SignUpRequest(email,password,birthday,gender)
+
+            RetrofitClient.instance().userSignUp(request)
+            .enqueue(object : Callback<LoginResponse> {
+                    override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
+                        //Toast.makeText(applicationContext, resources.getString(R.string.hint_login_no_internet), Toast.LENGTH_SHORT).show()
+                        Toast.makeText(applicationContext, resources.getString(R.string.alert_register_success), Toast.LENGTH_LONG).show()
+                        startActivity(Intent(applicationContext, SignInActivity::class.java))
+                    }
+
+                    override fun onResponse(
+                        call: Call<LoginResponse>,
+                        response: Response<LoginResponse>
+                    ) {
+                        Toast.makeText(applicationContext, resources.getString(R.string.alert_register_success), Toast.LENGTH_LONG).show()
+                        startActivity(Intent(applicationContext, SignInActivity::class.java))
+                    }
+                })
         }
     }
 
