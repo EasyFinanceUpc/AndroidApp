@@ -1,0 +1,57 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="742.029"
+    android:viewportHeight="742.029">
+  <group android:translateX="115.014496"
+      android:translateY="115.014496">
+      <path
+          android:fillColor="#18b272"
+          android:name="Rectángulo 1"
+          android:pathData="m0 0h512v512h-512v-512z" />
+      <path
+          android:fillColor="#0f6b44"
+          android:name="Forma 8"
+          android:pathData="m359 139 21 59 -181 -10 144 -52 3 -1 2 -1h3l3 1l3 1l2 3z" />
+      <path
+          android:fillColor="#0f6b44"
+          android:name="Forma 7"
+          android:pathData="m233 105 3 -1 3 1 3 2 45 70h-166l112 -72z" />
+      <path
+          android:fillColor="#0f6b44"
+          android:name="Forma 4"
+          android:pathData="m121 176 110 -70 2 -1h2h2h2l2 2l46 70l-166 -1z" />
+      <path
+          android:fillColor="#e5bb00"
+          android:name="Forma 3"
+          android:pathData="m324 220h99l1 77l-11 10l-90 1l1 -88z" />
+      <path
+          android:fillColor="#fcce00"
+          android:name="Forma 2"
+          android:pathData="m432 234v11h-15l15 -11z" />
+      <path
+          android:fillColor="#e5bb00"
+          android:name="Elipse 2"
+          android:pathData="m419.3 220c6.8 0 12.2 5.5 12.2 12.2c0 6.8 -5.5 12.2 -12.2 12.2c-6.8 0 -12.2 -5.5 -12.2 -12.2c0 -6.8 5.5 -12.2 12.2 -12.2z" />
+      <path
+          android:fillColor="#fff"
+          android:name="Rectángulo redondeado 1"
+          android:pathData="m119 160h278c8.3 0 15 7.8 15 17.5v189c0 9.7 -6.7 17.5 -15 17.5h-278c-8.3 0 -15 -7.8 -15 -17.5v-189c0 -9.7 6.7 -17.5 15 -17.5z" />
+      <path
+          android:fillColor="#fcce00"
+          android:name="A4"
+          android:pathData="m359.7 243.5c21.7 0 39.3 17.6 39.3 39.3c0 21.7 -17.6 39.3 -39.3 39.3c-21.7 0 -39.3 -17.6 -39.3 -39.3c0 -21.7 17.6 -39.3 39.3 -39.3z" />
+      <path
+          android:fillColor="#fcce00"
+          android:name="A3"
+          android:pathData="m416 291c8.8 0 16 7.2 16 16c0 8.8 -7.2 16 -16 16c-8.8 0 -16 -7.2 -16 -16c0 -8.8 7.2 -16 16 -16z" />
+      <path
+          android:fillColor="#fcce00"
+          android:name="Forma 1"
+          android:pathData="m359 244h73v66l-12 13h-61v-79z" />
+      <path
+          android:fillColor="#fff"
+          android:name="Elipse 1"
+          android:pathData="m359.3 273.5c5.7 0 10.3 4.6 10.3 10.3c0 5.7 -4.6 10.3 -10.3 10.3c-5.7 0 -10.3 -4.6 -10.3 -10.3c0 -5.7 4.6 -10.3 10.3 -10.3z" />
+  </group>
+</vector>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryDark">#0F6B44</color>
+    <color name="primary">#18B272</color>
+    <color name="accent">#18B272</color>
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#757575</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="primaryLightText">#FFFFFF</color>
+    <color name="criticalError">#FA3C30</color>
+    <color name="warningError">#FCCE00</color>
+    <color name="buttonPress">#2BF0A0</color>
+</resources>

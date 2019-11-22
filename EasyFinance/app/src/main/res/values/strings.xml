@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">EasyFinance</string>
+    <string name="exit_text">One more time to exit</string>
+    <string name="title_reset">Reset Password</string>
+    <string name="title_sign_up">Register</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard" translatable="false">Dashboard</string>
+    <string name="title_budget">Budgets</string>
+    <string name="title_goals">Goals</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_dashboard_fragment">Dashboard fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_budget_fragment">Budget fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_goal_fragment">Goal fragment</string>
+    <string name="text_scroll_view">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut nisi elit. Curabitur et mi sit amet enim pellentesque vehicula porttitor non erat. Mauris scelerisque erat ac nibh ullamcorper, ac imperdiet tellus pulvinar. Donec eget ipsum non ipsum bibendum accumsan. Cras ullamcorper facilisis congue. Suspendisse eu condimentum orci. Vivamus mattis mi consectetur sapien porta, in aliquet lacus laoreet.
+
+In non porttitor ligula. Ut aliquet ligula fermentum augue auctor blandit. Mauris tempus porta molestie. Donec purus sem, accumsan non magna a, aliquam lacinia mi. Sed blandit tellus ut suscipit volutpat. Nulla ullamcorper efficitur diam, at consectetur augue dapibus ut. Curabitur eleifend libero in ex iaculis, at vestibulum tortor maximus. Pellentesque ac velit at mi volutpat aliquet nec in dolor. Integer ac cursus augue. Nullam pharetra mauris a commodo hendrerit. Aliquam erat volutpat.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus, justo ut blandit scelerisque, dolor urna ultricies nunc, ut bibendum diam quam in neque. Fusce ornare sollicitudin vulputate. Fusce vitae tempor enim. Nulla dapibus dictum fermentum. Etiam dignissim, eros ut hendrerit volutpat, libero felis hendrerit quam, non tempus sem quam eget orci. Sed nisl neque, eleifend et tortor vulputate, efficitur fermentum justo. Morbi tincidunt ultricies interdum. Sed faucibus laoreet nisi, non bibendum mauris ullamcorper non. Sed vitae est vitae orci consectetur suscipit. Curabitur gravida, sapien sit amet ornare dapibus, metus enim imperdiet felis, ut ultricies quam leo eu nulla. Duis consectetur, neque ac finibus gravida, erat metus sagittis erat, vel accumsan justo tortor eu neque. Cras quis molestie lorem.
+
+Praesent eget ante sit amet metus rutrum sollicitudin vel sit amet lectus. Vestibulum pretium eu est id vehicula. Nullam ullamcorper sagittis nibh eu tincidunt. Vestibulum dignissim vel massa in pulvinar. Nunc placerat vehicula augue ac pretium. Nullam sed commodo dolor. Nulla et facilisis tellus, vel tincidunt mauris. Maecenas tristique maximus elit, non volutpat velit dapibus et. Praesent iaculis auctor elit id consectetur. Vestibulum auctor ornare tortor sodales ultrices. Mauris porta pharetra sapien sed convallis. Nam ornare quis mi et luctus. Maecenas quis nisi augue. Sed eu tortor ut ante interdum maximus ac sed diam. Nullam ac felis sem.
+
+Morbi convallis fringilla massa, ac consequat diam tempor sed. Morbi eget massa feugiat, mattis velit commodo, blandit risus. Vivamus ut ultricies elit. Sed massa risus, dapibus in ligula id, tempus sagittis mi. Vestibulum feugiat sagittis massa at imperdiet. Sed quis lobortis arcu. Suspendisse potenti. Donec bibendum consequat lacinia. Nulla tellus felis, vehicula mollis scelerisque nec, sodales eu orci. Pellentesque pellentesque, est in aliquet ultricies, sapien erat dapibus purus, eu elementum augue urna id arcu. Donec eu magna vel metus commodo condimentum nec vitae ex.
+
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque a nibh vel eros mattis ultricies. Etiam magna eros, dignissim non congue ut, iaculis vitae ligula. Curabitur eget lorem et arcu fermentum finibus at eget erat. Donec ut lacus et est interdum facilisis. Mauris justo est, interdum aliquam magna cursus, interdum dictum eros. Morbi eleifend molestie nunc, et finibus magna pharetra et. Sed faucibus ante tellus, sit amet pretium dolor viverra vitae. Suspendisse dictum sed arcu non convallis. Pellentesque dignissim mi ac diam faucibus, a malesuada felis placerat. Morbi mollis arcu ut viverra fermentum.
+
+Integer efficitur venenatis felis interdum interdum. Fusce vulputate facilisis tortor, ac scelerisque risus varius sed. Quisque ut eros leo. Nam egestas, lacus ut interdum condimentum, tellus ex tincidunt nulla, non sollicitudin arcu sem a tortor. In faucibus mi id rhoncus consequat. Etiam scelerisque eu augue et condimentum. Nulla molestie posuere congue. Phasellus vehicula turpis metus, sit amet fermentum neque eleifend eget. Mauris eget turpis quis dui sodales accumsan. Nulla facilisi. Vestibulum efficitur metus ac vulputate molestie. Curabitur quis placerat libero. Praesent at elementum eros. Nullam ac urna tempor, efficitur erat eu, feugiat odio. Quisque tincidunt quis magna vitae placerat. Maecenas id arcu eu mauris cursus iaculis vitae at mauris.
+    </string>
+    <string name="title_app">EasyFinance</string>
+    <string name="logo_description">This is a wallet, the logo of EasyFinance</string>
+    <string name="signIn_text_2">Sign in to continue with your incredible experience</string>
+    <string name="signIn_text_1">Welcome!</string>
+    <string name="hint_email">Email Address</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_sign_in">SIGN IN</string>
+    <string name="hint_forgot">FORGOT PASSWORD?</string>
+    <string name="hint_sign_up_1">Don\'t have an account?</string>
+    <string name="hint_sign_up_2">SIGN UP</string>
+    <string name="hint_forgot_1">Enter your email address to request a password reset.</string>
+    <string name="hint_reset">RESET</string>
+    <string name="hint_sign_up_3">Your incredible experience starts here.</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="hint_birthday">Birthday</string>
+    <string name="hint_gender">Select your gender</string>
+    <string name="hint_men">Male</string>
+    <string name="hint_woman">Female</string>
+    <string name="hint_sign_in_1">Already have an account?</string>
+    <string name="email_error">Email is required</string>
+    <string name="password_error">Password is required</string>
+    <string name="confirm_error">Confirm Password is required</string>
+    <string name="birthday_error">Birthday is required</string>
+    <string name="confirm_error_2">Confirm Password must be the same as Password</string>
+    <string name="registry">You are register</string>
+</resources>
